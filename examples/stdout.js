@@ -3,8 +3,8 @@
  * Module dependencies.
  */
 
-var Log = require('../lib/log')
-  , log = new Log('notice');
+var Log = require('../lib/log-color')
+  , log = new Log('debug');
 
 log.debug('a debug message');
 log.info('a info message');

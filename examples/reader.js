@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var Log = require('../lib/log')
+var Log = require('../lib/log-color')
   , fs = require('fs')
   , stream = fs.createReadStream(__dirname + '/file.log')
   , log = new Log('debug', stream);

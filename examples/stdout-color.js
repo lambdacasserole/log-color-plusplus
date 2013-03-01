@@ -4,9 +4,7 @@
  */
 
 var Log = require('../lib/log-color')
-  , fs = require('fs')
-  , stream = fs.createWriteStream(__dirname + '/file.log', { flags: 'a' })
-  , log = new Log('debug', stream);
+  , log = new Log({ level: 'debug', color: true });
 
 log.debug('a debug message');
 log.info('a info message');
@@ -15,4 +13,5 @@ log.warning('a warning message');
 log.error('a error message');
 log.critical('a critical message');
 log.alert('a alert message');
-log.emergency('a emergency message');
+log.emergency('a emergency %s', 'message');
+log.emergency('a really %s emergency %s', 'bad', 'message');
