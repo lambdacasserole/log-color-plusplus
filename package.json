@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "dependencies": {
     "cli-color": "0.2.2"
-  }
+  },
   "author": "Saul Johnson <saul.a.johnson@gmail.com>",
   "keywords": ["log", "logger"],
   "main": "./lib/log-color-optionaldate.js",
