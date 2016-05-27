@@ -1,12 +1,12 @@
 {
-  "name": "log-color",
-  "description": "Log.js + color.",
+  "name": "log-color-optionaldate",
+  "description": "Log.js + color + optional date.",
   "version": "1.0.0",
   "dependencies": {
     "cli-color": "0.2.2"
   }
-  "author": "Keiji Matsuzaki <futoase@gmail.com>",
+  "author": "Saul Johnson <saul.a.johnson@gmail.com>",
   "keywords": ["log", "logger"],
-  "main": "./lib/log-color.js",
+  "main": "./lib/log-color-optionaldate.js",
   "engines": { "node": ">= 0.8.21" }
 }
