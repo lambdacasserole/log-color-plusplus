@@ -1,12 +1,17 @@
 {
   "name": "log-color-optionaldate",
   "description": "Log.js fork of fork - colored logs with or without timestamp.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "dependencies": {
     "cli-color": "0.2.2"
   },
   "author": "Saul Johnson <saul.a.johnson@gmail.com>",
-  "keywords": ["log", "logger"],
+  "keywords": [
+    "log",
+    "logger"
+  ],
   "main": "./lib/log-color-optionaldate.js",
-  "engines": { "node": ">= 0.8.21" }
+  "engines": {
+    "node": ">= 0.8.21"
+  }
 }
