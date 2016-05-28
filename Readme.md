@@ -1,48 +1,47 @@
-## Log.js+color
+# Log.js (with color and optional timestamps)
 
-    Log.js+color is fork of Log.js.
+This package is a fork of [log-color.js](https://github.com/futoase/log-color.js) which it itself a fork of [Log.js](https://github.com/tj/log.js).
 
 ## Installation
 
-    $ npm install log-color
+Install using [npm](https://www.npmjs.com/):
+
+```
+$ npm install log-color
+```
 
 ## Example
 
-See to [Log.js](https://github.com/visionmedia/log.js/).
-Can be using similar.
+Can be used in a similar fashion to [Log.js](https://github.com/tj/log.js).
 
-Code snipet:
+Code snippet:
 
-    var Log = require('log')
-      , log = new Log('info');
+```
+var Log = require('log');
+var log = new Log('info');
+log.info('Sent a message to the user@example.com');
+```
 
-    log.info('SEND MAIL: send message to the hoge@example.com');
+### Enabling Color
 
+Enable color like this:
 
-### Color setting
+```
+var Log = require('log-color-optionaldate');
+var log = new Log({ level: 'debug', color: true, date: false });
+log.warning('Failed to send a message to the user@example.com');
+```
 
-Color setting:
+## Log Levels
 
-    var Log = require('log-color')
-      , log = new Log({ level: 'debug', color: true });
+The same log levels are available as in [Log.js](https://github.com/tj/log.js):
 
-    log.warning('SEND MAIL: do not send message to the hoge@example.com');
-
-
-## Log level
-
-Log level:
-
-    log.alert('alert');
-    log.critical('critical');
-    log.error('error');
-    log.warning('warning');
-    log.notice('notice');
-    log.info('info');
-    log.debug('debug'); 
-
-## License 
-
-(The MIT License) 
-
-Copyright (c) 2013 Keiji Matuzaki futoase@gmail.com
+```
+log.alert('alert');
+log.critical('critical');
+log.error('error');
+log.warning('warning');
+log.notice('notice');
+log.info('info');
+log.debug('debug'); 
+```
