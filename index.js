@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/log');
+module.exports = require('./lib/log-color-optionaldate');
