@@ -1,7 +1,7 @@
 {
   "name": "log-color-plusplus",
   "description": "Enhanced color-enabled logging library.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "cli-color": "0.2.2",
     "word-wrap": "^1.1.0"
