@@ -22,19 +22,25 @@ var log = new Log('info');
 log.info('Sent a message to the user@example.com');
 ```
 
-### Enabling Color
+### Enabling Color/Wrapping
 
-Enable color like this:
+Enable color/wrapping like this:
 
 ```
 var Log = require('log-color-plusplus');
-var log = new Log({ level: 'debug', color: true, date: false, wrap: 50 });
+var log = new Log({ 
+  level: 'debug', 
+  color: true, 
+  date: false,
+  wrap: true, // Turn word wrap on.
+  width: 50 // Wrap at 50 chars.
+});
 log.warning('Failed to send a message to the user@example.com');
 ```
 
 ## Log Levels
 
-The same log levels are available as in [Log.js](https://github.com/tj/log.js):
+The same log levels are available as in [Log.js](https://github.com/tj/log.js), with one addition:
 
 ```
 log.alert('alert');
@@ -44,4 +50,5 @@ log.warning('warning');
 log.notice('notice');
 log.info('info');
 log.debug('debug'); 
+log.print('print'); // Added. Will print a string without a 'level' preceeding it.
 ```
