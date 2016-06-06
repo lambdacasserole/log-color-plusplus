@@ -1,13 +1,13 @@
-# Log.js (with color and optional timestamps)
+# Log.js (with added vitamins for pep and vigor)
 
-This package is a fork of [log-color.js](https://github.com/futoase/log-color.js) which it itself a fork of [Log.js](https://github.com/tj/log.js).
+This package is based on [log-color-optionaldate.js](https://github.com/lambdacasserole/log-color-optionaldate.js) which is a fork of [log-color.js](https://github.com/futoase/log-color.js) which it itself a fork of [Log.js](https://github.com/tj/log.js).
 
 ## Installation
 
 Install using [npm](https://www.npmjs.com/):
 
 ```
-$ npm install log-color
+$ npm install log-color-plusplus
 ```
 
 ## Example
@@ -27,8 +27,8 @@ log.info('Sent a message to the user@example.com');
 Enable color like this:
 
 ```
-var Log = require('log-color-optionaldate');
-var log = new Log({ level: 'debug', color: true, date: false });
+var Log = require('log-color-plusplus');
+var log = new Log({ level: 'debug', color: true, date: false, wrap: 50 });
 log.warning('Failed to send a message to the user@example.com');
 ```
 
