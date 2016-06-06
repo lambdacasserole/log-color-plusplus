@@ -1,6 +1,6 @@
 {
-  "name": "log-color-optionaldate",
-  "description": "Log.js fork of fork - colored logs with or without timestamp.",
+  "name": "log-color-plusplus",
+  "description": "Enhanced color-enabled logging library.",
   "version": "1.1.0",
   "dependencies": {
     "cli-color": "0.2.2",
@@ -11,7 +11,7 @@
     "log",
     "logger"
   ],
-  "main": "./lib/log-color-optionaldate.js",
+  "main": "./lib/log-color-plusplus.js",
   "engines": {
     "node": ">= 0.8.21"
   }
